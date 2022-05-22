@@ -29,7 +29,9 @@
       (click) tell angular to watch for click event, when button gets clicked call onButtonClick function
     -->
 </div>
-
+<!-- NgIf When expression evaluates to true, Angular renders the template provided in a then clause, 
+  and when false or null, Angular renders the template provided in an optional else clause,
+-->
 <div *ngIf="password">
   <label>Your Password</label>
   <input [value]="password" />
