@@ -24,6 +24,10 @@
   <!-- Disabled will be set to true if length doesnot exist and any of these (includeLetters, includeNumbers, includeSymbols) are not checked-->
   <button [disabled]="!(length && (includeLetters || includeNumbers || includeSymbols))"
     (click)="onButtonClick()">Generate!</button>
+    <!-- 
+      Event Binding Syntax
+      (click) tell angular to watch for click event, when button gets clicked call onButtonClick function
+    -->
 </div>
 
 <div *ngIf="password">
