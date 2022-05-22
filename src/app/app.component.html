@@ -21,6 +21,7 @@
 </div>
 
 <div>
+  <!-- Disabled will be set to true if length doesnot exist and any of these (includeLetters, includeNumbers, includeSymbols) are not checked-->
   <button [disabled]="!(length && (includeLetters || includeNumbers || includeSymbols))"
     (click)="onButtonClick()">Generate!</button>
 </div>
