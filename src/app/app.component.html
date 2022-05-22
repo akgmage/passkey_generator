@@ -36,8 +36,13 @@
   <label>Your Password</label>
   <!-- 
     Property Binding Syntax
-    [value] Name of the property we want to set on this element
+    [value] Name of the property we want to set on this element (We want to set the value property)
     "password" name of the property in our class to put here. Evaluated as code!
+    Take a look at component class instance, password property (whatever that property value is, 
+    take it in as actual value for this input)
+    Whenever password property on class changes, Angular automatically detects that.
+    Its going to automatically take the updated password property and throw it in as the new value
+    to our input.
   -->
   <input [value]="password" />
 </div>
