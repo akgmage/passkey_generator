@@ -52,8 +52,8 @@ export class AppComponent {
 
     let generatedPassword = '';
     for (let i = 0; i < this.length; i++){
-      const index = Math.floor(Math.random() * validChars.length)
-      generatedPassword += validChars[index]
+      const index = Math.floor(Math.random() * validChars.length) // Gives us a random number between 0 and length of validChars
+      generatedPassword += validChars[index] // append character at the random index to generatePassword
     }
 
     this.password = generatedPassword
