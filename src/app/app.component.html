@@ -34,5 +34,10 @@
 -->
 <div *ngIf="password">
   <label>Your Password</label>
+  <!-- 
+    Property Binding Syntax
+    [value] Name of the property we want to set on this element
+    "password" name of the property in our class to put here. Evaluated as code!
+  -->
   <input [value]="password" />
 </div>
